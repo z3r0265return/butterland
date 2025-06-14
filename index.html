@@ -1,389 +1,373 @@
-<html lang="en" style="--text: #fbf9fb; --overlay1: #6e6b6e; --surface2: #413f41; --surface0: #1d1a1c; --subtext0: #a6a4a6; --base: #110f11; --mantle: #0b0a0b; --crust: #000000; --accent: #eba6ff; --bgmoveX: 3.359999999999557px; --bgmoveY: 2.7000000000000215px;" head=""><head><link rel="icon" href="https://th.bing.com/th/id/OIP.s_4ndsT7nQFIFXn5ws4kiwHaEK?w=303&amp;h=180&amp;c=7&amp;r=0&amp;o=7&amp;cb=thvnextc1&amp;pid=1.7&amp;rm=3">
-<title>ButterLand</title>
-<style>
-  body {
-    background-image: url("https://th.bing.com/th/id/OIP.s_4ndsT7nQFIFXn5ws4kiwHaEK?w=303&h=180&c=7&r=0&o=7&cb=thvnextc1&pid=1.7&rm=3");
-    margin: 0;
-    padding: 0;
-    line-height: 1em;
-    display: flex;
-    gap: 20px;
-    font-family: 'Comic Sans MS', 'Arial', sans-serif !important;
-  }
-  #sidebar {
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 110px;
-    height: 100vh;
-    background: rgba(255, 242, 0, 0.9);
-    box-shadow: 2px 0 8px #fff200;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    gap: 20px;
-    z-index: 1000000;
-  }
-  .small-button {
-    width: 94px;
-    height: 89px;
-    background: url('https://myinstants.com/media/images/transparent_button_small_sprite.png') no-repeat;
-    background-position: -5px -5px;
-    border: 0;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    flex-shrink: 0;
-  }
-  .small-button:focus {
-    outline: none;
-    background-position: -5px -5px;
-  }
-  .small-button:active {
-    background-position: -109px -5px;
-  }
-  #d1 {
-    margin-left: 130px;
-    width: 580px;
-    margin-top: 20px;
-    text-align: center;
-    position: relative;
-  }
-  #divider {
-    width: 3px;
-    background-color: yellow;
-    margin-top: 20px;
-    height: 10000px;
-    align-self: flex-start;
-    box-shadow: 0 0 10px 2px #fff200;
-  }
-  #mute-btn {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    padding: 8px 12px;
-    background: #fff235;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 0 6px #fff200;
-    user-select: none;
-    z-index: 1000001;
-  }
-</style>
+<!DOCTYPE HTML>
+<html lang="en" style="--text: #fbf9fb; --overlay1: #6e6b6e; --surface2: #413f41; --surface0: #1d1a1c; --subtext0: #a6a4a6; --base: #110f11; --mantle: #0b0a0b; --crust: #000000; --accent: #eba6ff; --bgmoveX: 3.359999999999557px; --bgmoveY: 2.7000000000000215px;"><head>
+  <link rel="icon" href="https://th.bing.com/th/id/OIP.s_4ndsT7nQFIFXn5ws4kiwHaEK?w=303&amp;h=180&amp;c=7&amp;r=0&amp;o=7&amp;cb=thvnextc1&amp;pid=1.7&amp;rm=3">
+  <title>ButterLand</title>
+  <style>
+    body {
+      background-image: url("https://th.bing.com/th/id/OIP.s_4ndsT7nQFIFXn5ws4kiwHaEK?w=303&h=180&c=7&r=0&o=7&cb=thvnextc1&pid=1.7&rm=3");
+      margin: 0;
+      padding: 0;
+      line-height: 1em;
+      display: flex;
+      gap: 20px;
+      font-family: 'Comic Sans MS', 'Arial', sans-serif !important;
+    }
+    #sidebar {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 110px;
+      height: 100vh;
+      background: rgba(255, 242, 0, 0.9);
+      box-shadow: 2px 0 8px #fff200;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      gap: 20px;
+      z-index: 1000000;
+    }
+    .small-button {
+      width: 94px;
+      height: 89px;
+      background: url('https://myinstants.com/media/images/transparent_button_small_sprite.png') no-repeat;
+      background-position: -5px -5px;
+      border: 0;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      flex-shrink: 0;
+    }
+    .small-button:focus {
+      outline: none;
+      background-position: -5px -5px;
+    }
+    .small-button:active {
+      background-position: -109px -5px;
+    }
+    #d1 {
+      margin-left: 130px;
+      width: 580px;
+      margin-top: 20px;
+      text-align: center;
+      position: relative;
+    }
+    #divider {
+      width: 3px;
+      background-color: yellow;
+      margin-top: 20px;
+      height: 10000px;
+      align-self: flex-start;
+      box-shadow: 0 0 10px 2px #fff200;
+    }
+    #mute-btn {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      padding: 8px 12px;
+      background: #fff235;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 0 6px #fff200;
+      user-select: none;
+      z-index: 1000001;
+    }
+  </style>
 </head>
-<body _msthidden="1">
+<body>
 
+  <div id="oneko" aria-hidden="true" style="transition: opacity 0.5s; width: 2.75rem; height: 2.75rem; background-size: 352px 176px; position: fixed; pointer-events: none; image-rendering: pixelated; left: 1245.46px; top: 286.123px; background-image: url(https://bomberfish.ca/oneko-ctp.gif); opacity: 1; background-position: -132px -132px;"></div>
 
-    <div id="oneko" aria-hidden="true" style="transition: opacity 0.5s; width: 2.75rem; height: 2.75rem; background-size: 352px 176px; position: fixed; pointer-events: none; image-rendering: pixelated; left: 1245.46px; top: 286.123px; background-image: url(https://bomberfish.ca/oneko-ctp.gif); opacity: 1; background-position: -132px -132px;" _msthidden="1"></div>
-
-<div id="sidebar" _msthidden="1">
-  <div style="
-    background: rgba(255, 242, 0, 0.9);
-    color: black;
-    font-size: 2px 0 8px #fff200;
-    padding: 7;
-    text-shadow: 0 0 5px #fff000;
-  " _msttexthash="325520" _msthash="19">cool stuff and shit</div>
+  <div id="sidebar">
+    <div style="
+      background: rgba(255, 242, 0, 0.9);
+      color: black;
+      font-size: 2px 0 8px #fff200;
+      padding: 7;
+      text-shadow: 0 0 5px #fff000;
+    " _msttexthash="325520" _msthash="27">cool stuff and shit</div>
     <audio id="player" controls=""></audio>
 
-<div>
-  <input type="text" id="urlBox" placeholder="paste mp3 url" style="width: 300px;" _mstplaceholder="178867" _msthash="24">
-  <button onclick="loadSong()" _msttexthash="45721" _msthash="25">load</button>
-</div>
+    <div>
+      <input type="text" id="urlBox" placeholder="paste mp3 url" style="width: 300px;" _mstplaceholder="178867" _msthash="28">
+      <button onclick="loadSong()" _msttexthash="45721" _msthash="29">load</button>
+    </div>
 
-<div>
-  <button onclick="player.play()" _msttexthash="48503" _msthash="22">play</button>
-  <button onclick="player.pause()" _msttexthash="63362" _msthash="23">pause</button>
-</div>
+    <div>
+      <button onclick="player.play()" _msttexthash="48503" _msthash="30">play</button>
+      <button onclick="player.pause()" _msttexthash="63362" _msthash="31">pause</button>
+    </div>
 
-<div>
-  <label _msttexthash="81471" _msthash="21">volume</label>
-  <input type="range" min="0" max="1" step="0.01" value="1" onchange="player.volume = this.value">
-</div>
+    <div>
+      <label _msttexthash="81471" _msthash="32">volume</label>
+      <input type="range" min="0" max="1" step="0.01" value="1" onchange="player.volume = this.value">
+    </div>
 
-<div>
-  <label _msttexthash="61360" _msthash="20">speed</label>
-  <input type="range" min="0.5" max="2" step="0.1" value="1" onchange="player.playbackRate = this.value">
-</div>
+    <div>
+      <label _msttexthash="61360" _msthash="33">speed</label>
+      <input type="range" min="0.5" max="2" step="0.1" value="1" onchange="player.playbackRate = this.value">
+    </div>
 
-<script>
-  const player = document.getElementById('player')
-  const urlBox = document.getElementById('urlBox')
+    <button onclick="eval(prompt('type your butter js'))" width="85" length="10" _msttexthash="299533" _msthash="34">run cursed butter</button>
 
-  function loadSong() {
-    player.src = urlBox.value
-    player.load()
-  }
-</script>
+    <a href="https://bomberfish.ca">
+      <img src="https://bomberfish.ca/buttons/button.gif" alt="BomberFish" title="BomberFish" _mstalt="150267" _msthash="35">
+    </a>
+    <a href="https://mercurywork.shop" target="_blank">
+      <img loading="lazy" src="https://bomberfish.ca/buttons/hg88x31.webp" title="Mercury Workshop" referrerpolicy="no-referrer" crossorigin="anonymous">
+    </a>
+    <a href="https://anura.pro" target="_blank">
+      <img loading="lazy" src="https://raw.githubusercontent.com/MercuryWorkshop/anuraOS/refs/heads/main/assets/logo_dark.png" width="85" length="10" title="Mercury Workshop" referrerpolicy="no-referrer" crossorigin="anonymous">
+    </a>
+  </div>
 
-    <button onclick="eval(prompt('type your butter js'))" _msttexthash="299533" _msthash="19" width="85" length="10">run cursed butter</button>
-  
-  <a href="https://bomberfish.ca" _msthidden="1">
-    <img src="https://bomberfish.ca/buttons/button.gif" alt="BomberFish" title="BomberFish" _mstalt="150267" _msthash="20" _msthidden="A">
-  </a>
-    <a href="https://mercurywork.shop" target="_blank" class="B-9dwk dlcomponent" data-component="B"><img loading="lazy" src="https://bomberfish.ca/buttons/hg88x31.webp" title="Mercury Workshop" referrerpolicy="no-referrer" crossorigin="anonymous" _mstalt="1734252" _msthash="23"></a>
- <a href="https://anura.pro" target="_blank" class="B-9dwk dlcomponent" data-component="B"><img loading="lazy" src="https://raw.githubusercontent.com/MercuryWorkshop/anuraOS/refs/heads/main/assets/logo_dark.png" width="85" length="10" title="Mercury Workshop" referrerpolicy="no-referrer" crossorigin="anonymous" _mstalt="1734252" _msthash="23"></a></div>
+  <div style="position: fixed; top: 0; left: 0; width: 100%; z-index: 999999; text-align: center; pointer-events: none;">
+    <div style="background: rgba(0,0,0); color: white; font-size: 24px; padding: 8px; text-shadow: 0 0 BLACK;" _msttexthash="151801" _msthash="26">ButterLand</div>
+  </div>
 
+  <div id="d1">
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/z1e1m9dE0UI" title="get stickbugged" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/t2Lxyt57hpw" title="add butter" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/2yJgwwDcgV8" title="nyan cat" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/mEe6wHP1x70" title="roblox short" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/4-yTCIIIFAs" title="tuca donka" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/3XPxInnyNAs" title="tuca donka" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+  </div>
 
+  <div id="dd" style="margin-left: 130px;"></div>
 
-<div style="position: fixed; top: 0; left: 0; width: 100%; z-index: 999999; text-align: center; pointer-events: none;">
-  <div style="background: rgba(0,0,0);color: white;font-size: 24px;padding: 8px;text-shadow: 0 0 BLACK;" _msttexthash="151801" _msthash="20">ButterLand</div>
-</div>
+  <script>
+    const player = document.getElementById('player');
+    const urlBox = document.getElementById('urlBox');
 
-<div id="d1">
-  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/z1e1m9dE0UI" title="get stickbugged" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
-  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/t2Lxyt57hpw" title="add butter" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
-  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/2yJgwwDcgV8" title="nyan cat" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
-  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/mEe6wHP1x70" title="roblox short" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
-  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/4-yTCIIIFAs" title="tuca donka" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/3XPxInnyNAs" title="tuca donka" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p></div>
-
-<div id="dd" style="margin-left: 130px;">
-  
-</div>
-
-
-
-<script>// oneko.js: https://github.com/adryd325/oneko.js
-
-(function oneko() {
-  const isReducedMotion =
-    window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
-    window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
-
-  if (isReducedMotion) return;
-
-  const nekoEl = document.createElement("div");
-
-  let nekoPosX = 32;
-  let nekoPosY = 32;
-
-  let mousePosX = 0;
-  let mousePosY = 0;
-
-  let frameCount = 0;
-  let idleTime = 0;
-  let idleAnimation = null;
-  let idleAnimationFrame = 0;
-
-  const nekoSpeed = 10;
-  const spriteSets = {
-    idle: [[-3, -3]],
-    alert: [[-7, -3]],
-    scratchSelf: [
-      [-5, 0],
-      [-6, 0],
-      [-7, 0],
-    ],
-    scratchWallN: [
-      [0, 0],
-      [0, -1],
-    ],
-    scratchWallS: [
-      [-7, -1],
-      [-6, -2],
-    ],
-    scratchWallE: [
-      [-2, -2],
-      [-2, -3],
-    ],
-    scratchWallW: [
-      [-4, 0],
-      [-4, -1],
-    ],
-    tired: [[-3, -2]],
-    sleeping: [
-      [-2, 0],
-      [-2, -1],
-    ],
-    N: [
-      [-1, -2],
-      [-1, -3],
-    ],
-    NE: [
-      [0, -2],
-      [0, -3],
-    ],
-    E: [
-      [-3, 0],
-      [-3, -1],
-    ],
-    SE: [
-      [-5, -1],
-      [-5, -2],
-    ],
-    S: [
-      [-6, -3],
-      [-7, -2],
-    ],
-    SW: [
-      [-5, -3],
-      [-6, -1],
-    ],
-    W: [
-      [-4, -2],
-      [-4, -3],
-    ],
-    NW: [
-      [-1, 0],
-      [-1, -1],
-    ],
-  };
-
-  function init() {
-    nekoEl.id = "oneko";
-    nekoEl.ariaHidden = true;
-    nekoEl.style.width = "32px";
-    nekoEl.style.height = "32px";
-    nekoEl.style.position = "fixed";
-    nekoEl.style.pointerEvents = "none";
-    nekoEl.style.imageRendering = "pixelated";
-    nekoEl.style.left = `${nekoPosX - 16}px`;
-    nekoEl.style.top = `${nekoPosY - 16}px`;
-    nekoEl.style.zIndex = 2147483647;
-
-    let nekoFile = "./oneko.gif"
-    const curScript = document.currentScript
-    if (curScript && curScript.dataset.cat) {
-      nekoFile = curScript.dataset.cat
+    function loadSong() {
+      player.src = urlBox.value;
+      player.load();
     }
-    nekoEl.style.backgroundImage = `url(${nekoFile})`;
+  </script>
 
-    document.body.appendChild(nekoEl);
+  <script>
+    (function oneko() {
+      const isReducedMotion =
+        window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
+        window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
 
-    document.addEventListener("mousemove", function (event) {
-      mousePosX = event.clientX;
-      mousePosY = event.clientY;
-    });
+      if (isReducedMotion) return;
 
-    window.requestAnimationFrame(onAnimationFrame);
-  }
+      const nekoEl = document.createElement("div");
 
-  let lastFrameTimestamp;
+      let nekoPosX = 32;
+      let nekoPosY = 32;
 
-  function onAnimationFrame(timestamp) {
-    // Stops execution if the neko element is removed from DOM
-    if (!nekoEl.isConnected) {
-      return;
-    }
-    if (!lastFrameTimestamp) {
-      lastFrameTimestamp = timestamp;
-    }
-    if (timestamp - lastFrameTimestamp > 100) {
-      lastFrameTimestamp = timestamp
-      frame()
-    }
-    window.requestAnimationFrame(onAnimationFrame);
-  }
+      let mousePosX = 0;
+      let mousePosY = 0;
 
-  function setSprite(name, frame) {
-    const sprite = spriteSets[name][frame % spriteSets[name].length];
-    nekoEl.style.backgroundPosition = `${sprite[0] * 32}px ${sprite[1] * 32}px`;
-  }
+      let frameCount = 0;
+      let idleTime = 0;
+      let idleAnimation = null;
+      let idleAnimationFrame = 0;
 
-  function resetIdleAnimation() {
-    idleAnimation = null;
-    idleAnimationFrame = 0;
-  }
+      const nekoSpeed = 10;
+      const spriteSets = {
+        idle: [[-3, -3]],
+        alert: [[-7, -3]],
+        scratchSelf: [[-5, 0], [-6, 0], [-7, 0]],
+        scratchWallN: [[0, 0], [0, -1]],
+        scratchWallS: [[-7, -1], [-6, -2]],
+        scratchWallE: [[-2, -2], [-2, -3]],
+        scratchWallW: [[-4, 0], [-4, -1]],
+        tired: [[-3, -2]],
+        sleeping: [[-2, 0], [-2, -1]],
+        N: [[-1, -2], [-1, -3]],
+        NE: [[0, -2], [0, -3]],
+        E: [[-3, 0], [-3, -1]],
+        SE: [[-5, -1], [-5, -2]],
+        S: [[-6, -3], [-7, -2]],
+        SW: [[-5, -3], [-6, -1]],
+        W: [[-4, -2], [-4, -3]],
+        NW: [[-1, 0], [-1, -1]]
+      };
 
-  function idle() {
-    idleTime += 1;
+      function init() {
+        nekoEl.id = "oneko";
+        nekoEl.ariaHidden = true;
+        nekoEl.style.width = "32px";
+        nekoEl.style.height = "32px";
+        nekoEl.style.position = "fixed";
+        nekoEl.style.pointerEvents = "none";
+        nekoEl.style.imageRendering = "pixelated";
+        nekoEl.style.left = `${nekoPosX - 16}px`;
+        nekoEl.style.top = `${nekoPosY - 16}px`;
+        nekoEl.style.zIndex = 2147483647;
 
-    // every ~ 20 seconds
-    if (
-      idleTime > 10 &&
-      Math.floor(Math.random() * 200) == 0 &&
-      idleAnimation == null
-    ) {
-      let avalibleIdleAnimations = ["sleeping", "scratchSelf"];
-      if (nekoPosX < 32) {
-        avalibleIdleAnimations.push("scratchWallW");
-      }
-      if (nekoPosY < 32) {
-        avalibleIdleAnimations.push("scratchWallN");
-      }
-      if (nekoPosX > window.innerWidth - 32) {
-        avalibleIdleAnimations.push("scratchWallE");
-      }
-      if (nekoPosY > window.innerHeight - 32) {
-        avalibleIdleAnimations.push("scratchWallS");
-      }
-      idleAnimation =
-        avalibleIdleAnimations[
-          Math.floor(Math.random() * avalibleIdleAnimations.length)
-        ];
-    }
-
-    switch (idleAnimation) {
-      case "sleeping":
-        if (idleAnimationFrame < 8) {
-          setSprite("tired", 0);
-          break;
+        let nekoFile = "./oneko.gif"
+        const curScript = document.currentScript;
+        if (curScript && curScript.dataset.cat) {
+          nekoFile = curScript.dataset.cat;
         }
-        setSprite("sleeping", Math.floor(idleAnimationFrame / 4));
-        if (idleAnimationFrame > 192) {
-          resetIdleAnimation();
+        nekoEl.style.backgroundImage = `url(${nekoFile})`;
+
+        document.body.appendChild(nekoEl);
+
+        document.addEventListener("mousemove", function (event) {
+          mousePosX = event.clientX;
+          mousePosY = event.clientY;
+        });
+
+        window.requestAnimationFrame(onAnimationFrame);
+      }
+
+      let lastFrameTimestamp;
+
+      function onAnimationFrame(timestamp) {
+        if (!nekoEl.isConnected) {
+          return;
         }
-        break;
-      case "scratchWallN":
-      case "scratchWallS":
-      case "scratchWallE":
-      case "scratchWallW":
-      case "scratchSelf":
-        setSprite(idleAnimation, idleAnimationFrame);
-        if (idleAnimationFrame > 9) {
-          resetIdleAnimation();
+        if (!lastFrameTimestamp) {
+          lastFrameTimestamp = timestamp;
         }
-        break;
-      default:
-        setSprite("idle", 0);
-        return;
+        if (timestamp - lastFrameTimestamp > 100) {
+          lastFrameTimestamp = timestamp;
+          frame();
+        }
+        window.requestAnimationFrame(onAnimationFrame);
+      }
+
+      function setSprite(name, frame) {
+        const sprite = spriteSets[name][frame % spriteSets[name].length];
+        nekoEl.style.backgroundPosition = `${sprite[0] * 32}px ${sprite[1] * 32}px`;
+      }
+
+      function resetIdleAnimation() {
+        idleAnimation = null;
+        idleAnimationFrame = 0;
+      }
+
+      function idle() {
+        idleTime += 1;
+
+        if (idleTime > 10 && Math.floor(Math.random() * 200) == 0 && idleAnimation == null) {
+          let avalibleIdleAnimations = ["sleeping", "scratchSelf"];
+          if (nekoPosX < 32) {
+            avalibleIdleAnimations.push("scratchWallW");
+          }
+          if (nekoPosY < 32) {
+            avalibleIdleAnimations.push("scratchWallN");
+          }
+          if (nekoPosX > window.innerWidth - 32) {
+            avalibleIdleAnimations.push("scratchWallE");
+          }
+          if (nekoPosY > window.innerHeight - 32) {
+            avalibleIdleAnimations.push("scratchWallS");
+          }
+          idleAnimation =
+            avalibleIdleAnimations[
+              Math.floor(Math.random() * avalibleIdleAnimations.length)
+            ];
+        }
+
+        switch (idleAnimation) {
+          case "sleeping":
+            if (idleAnimationFrame < 8) {
+              setSprite("tired", 0);
+              break;
+            }
+            setSprite("sleeping", Math.floor(idleAnimationFrame / 4));
+            if (idleAnimationFrame > 192) {
+              resetIdleAnimation();
+            }
+            break;
+          case "scratchWallN":
+          case "scratchWallS":
+          case "scratchWallE":
+          case "scratchWallW":
+          case "scratchSelf":
+            setSprite(idleAnimation, idleAnimationFrame);
+            if (idleAnimationFrame > 9) {
+              resetIdleAnimation();
+            }
+            break;
+          default:
+            setSprite("idle", 0);
+            return;
+        }
+        idleAnimationFrame += 1;
+      }
+
+      function frame() {
+        frameCount += 1;
+        const diffX = nekoPosX - mousePosX;
+        const diffY = nekoPosY - mousePosY;
+        const distance = Math.sqrt(diffX ** 2 + diffY ** 2);
+
+        if (distance < nekoSpeed || distance < 48) {
+          idle();
+          return;
+        }
+
+        idleAnimation = null;
+        idleAnimationFrame = 0;
+
+        if (idleTime > 1) {
+          setSprite("alert", 0);
+          idleTime = Math.min(idleTime, 7);
+          idleTime -= 1;
+          return;
+        }
+
+        let direction = "";
+        if (diffY / distance > 0.5) direction += "N";
+        if (diffY / distance < -0.5) direction += "S";
+        if (diffX / distance > 0.5) direction += "W";
+        if (diffX / distance < -0.5) direction += "E";
+
+        setSprite(direction, frameCount);
+
+        nekoPosX -= (diffX / distance) * nekoSpeed;
+        nekoPosY -= (diffY / distance) * nekoSpeed;
+
+        nekoPosX = Math.min(Math.max(16, nekoPosX), window.innerWidth - 16);
+        nekoPosY = Math.min(Math.max(16, nekoPosY), window.innerHeight - 16);
+
+        nekoEl.style.left = `${nekoPosX - 16}px`;
+        nekoEl.style.top = `${nekoPosY - 16}px`;
+      }
+
+      init();
+    })();
+  </script>
+
+  <script>
+    let dragTarget = null, offsetX = 0, offsetY = 0;
+
+    function openWindow() {
+      document.getElementById('win98').style.display = 'block';
     }
-    idleAnimationFrame += 1;
-  }
 
-  function frame() {
-    frameCount += 1;
-    const diffX = nekoPosX - mousePosX;
-    const diffY = nekoPosY - mousePosY;
-    const distance = Math.sqrt(diffX ** 2 + diffY ** 2);
-
-    if (distance < nekoSpeed || distance < 48) {
-      idle();
-      return;
+    function closeWindow() {
+      document.getElementById('win98').style.display = 'none';
     }
 
-    idleAnimation = null;
-    idleAnimationFrame = 0;
-
-    if (idleTime > 1) {
-      setSprite("alert", 0);
-      // count down after being alerted before moving
-      idleTime = Math.min(idleTime, 7);
-      idleTime -= 1;
-      return;
+    function startDrag(e) {
+      dragTarget = document.getElementById('win98');
+      offsetX = e.clientX - dragTarget.offsetLeft;
+      offsetY = e.clientY - dragTarget.offsetTop;
+      document.addEventListener('mousemove', drag);
+      document.addEventListener('mouseup', stopDrag);
     }
 
-    let direction;
-    direction = diffY / distance > 0.5 ? "N" : "";
-    direction += diffY / distance < -0.5 ? "S" : "";
-    direction += diffX / distance > 0.5 ? "W" : "";
-    direction += diffX / distance < -0.5 ? "E" : "";
-    setSprite(direction, frameCount);
+    function drag(e) {
+      if (!dragTarget) return;
+      dragTarget.style.left = (e.clientX - offsetX) + 'px';
+      dragTarget.style.top = (e.clientY - offsetY) + 'px';
+    }
 
-    nekoPosX -= (diffX / distance) * nekoSpeed;
-    nekoPosY -= (diffY / distance) * nekoSpeed;
-
-    nekoPosX = Math.min(Math.max(16, nekoPosX), window.innerWidth - 16);
-    nekoPosY = Math.min(Math.max(16, nekoPosY), window.innerHeight - 16);
-
-    nekoEl.style.left = `${nekoPosX - 16}px`;
-    nekoEl.style.top = `${nekoPosY - 16}px`;
-  }
-
-  init();
-})();>
+    function stopDrag() {
+      document.removeEventListener('mousemove', drag);
+      document.removeEventListener('mouseup', stopDrag);
+      dragTarget = null;
+    }
+  </script>
 
 
 
-</body></html></script></body></html>
+</body></html>
